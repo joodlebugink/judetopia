@@ -176,7 +176,7 @@ main { flex: 1; overflow-x: clip; }
   text-decoration: none;
   color: var(--ink);
   background: var(--chip, var(--butter));
-  border: var(--line) solid var(--edge);
+  border: 3px solid var(--edge); /* thinner, so neighbouring buttons and their purple stripes never touch */
   border-radius: 999px;
   transition: transform .2s, background .2s;
   white-space: nowrap;
@@ -218,6 +218,7 @@ main { flex: 1; overflow-x: clip; }
   outline: 2px solid var(--electric);
   outline-offset: 0;
 }
+:where(.nav-link) { outline-width: 1.5px; }
 /* a thick divider bar with rounded ends, drawn along the top of the element */
 .ruled { position: relative; }
 .ruled::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: var(--line); border-radius: 999px; background: var(--rule-color); }
@@ -279,8 +280,9 @@ main { flex: 1; overflow-x: clip; }
 @media (max-width: 700px) {
   /* all four menu buttons stay on one row: the text scales with the screen */
   .site-head { padding-inline: 10px; }
-  .site-nav { gap: .22rem; flex-wrap: nowrap; }
-  .nav-link { font-size: min(.85rem, 2.75vw); letter-spacing: 0; padding: .5em .48em .44em; border-width: 3px; }
+  .site-nav { gap: .32rem; flex-wrap: nowrap; }
+  .nav-link { font-size: min(.85rem, 2.75vw); letter-spacing: 0; padding: .5em .48em .44em; border-width: 2px; }
+  :where(.nav-link) { outline-width: 1px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
