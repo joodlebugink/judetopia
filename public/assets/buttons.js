@@ -17,8 +17,8 @@
   // [selector, nth match, x, y] — x/y are fractions of that element's box
   const SPOTS = {
     zines: [
-      ['.shelf li', 0, -.35, .5], ['#alien-mode .blurb h2', 0, -.06, .35], ['#alien-mode', 0, .92, .1], ['#emergence .pages', 0, .95, .06],
-      ['#alien-mode .reader-ui', 0, .9, .5], ['#emergence .blurb h2', 0, 1.06, .6], ['.shelf li', 1, 1.3, .5], ['.site-foot', 0, .14, .55],
+      ['.page-head h1', 0, -.25, .5], ['#alien-mode .blurb h2', 0, -.06, .35], ['#alien-mode', 0, .92, .1], ['#emergence .pages', 0, .95, .06],
+      ['#alien-mode .reader-ui', 0, .9, .5], ['#emergence .blurb h2', 0, 1.06, .6], ['.shelf li', 2, 1.2, .5], ['.site-foot', 0, .14, .55],
       ['#alien-mode .pages', 0, .04, .96], ['#emergence .reader-ui', 0, .1, .5], ['.foot-mark', 0, 1.05, .1], ['#alien-mode .blurb p', 0, 1.04, .5],
       ['.site-foot', 0, .86, .3], ['.logo', 0, 1.06, .3],
     ],
